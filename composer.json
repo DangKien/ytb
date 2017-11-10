@@ -1,0 +1,43 @@
+{
+    "name": "dawson/youtube",
+    "description": "Upload a video to YouTube with Laravel 5.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joe Dawson",
+            "email": "hi@joedawson.me"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "^5.4",
+        "google/apiclient": "^2.2",
+        "nesbot/carbon": "^1.22"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.2",
+        "phpunit/phpunit": "~5.0",
+        "phpunit/phpcov": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dawson\\Youtube\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dawson\\Youtube\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dawson\\Youtube\\YoutubeServiceProvider"
+            ],
+            "aliases": {
+                "Youtube": "Dawson\\Youtube\\Facades\\Youtube"
+            }
+        }
+    }
+}
