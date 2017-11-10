@@ -4,8 +4,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Joe Dawson",
-            "email": "hi@joedawson.me"
+            "name": "Dang Kien",
+            "email": "dangtrungkien96@gmail.com"
         }
     ],
     "require": {
@@ -21,22 +21,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Dawson\\Youtube\\": "src/"
+            "DangKien\\Youtube\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dawson\\Youtube\\Tests\\": "tests/"
+            "DangKien\\Youtube\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "Dawson\\Youtube\\YoutubeServiceProvider"
+                "DangKien\\Youtube\\YoutubeServiceProvider"
             ],
             "aliases": {
-                "Youtube": "Dawson\\Youtube\\Facades\\Youtube"
+                "Youtube": "DangKien\\Youtube\\Facades\\Youtube"
             }
         }
     }
