@@ -1,5 +1,4 @@
-composer require dangkien/youtube
-
+composer require dangtrungkien/ytb:dev-master
 thêm vào app
 'providers' => [
     ...
